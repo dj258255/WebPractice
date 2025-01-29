@@ -13,7 +13,16 @@
 <body>
 <h1>List Page</h1>
 
-${list}
+
+<c:set var="target" value="5"></c:set>
+
+<ul>
+    <c:forEach var ="num" begin="1" end="10">
+        <c:if test="${num == target}">
+            num is target
+        </c:if>
+    </c:forEach>
+</ul>
 
 </body>
 </html>
