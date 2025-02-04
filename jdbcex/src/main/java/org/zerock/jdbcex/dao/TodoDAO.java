@@ -1,7 +1,7 @@
 package org.zerock.jdbcex.dao;
+import org.zerock.jdbcex.domain.TodoVO;
 
 import lombok.Cleanup;
-import org.zerock.jdbcex.domain.TodoVO;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -101,5 +101,29 @@ public class TodoDAO {
                 .build();
 
         return vo;
+    }
+
+    public void deleteOne(Long tno) throws Exception{
+        String sql = "delete from tbl_todo where tno = ?";
+
+        @Cleanup Connection connection = ConnectionUtil.INSTANCE.getConnection();
+        @Cleanup PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setLong(1,tno);
+        preparedStatement.executeUpdate();
+    }
+
+    public void updateOne(TodoVO todoVO)throws Exception{
+
+        String sql = "update tbl_todo set title =? , dueDate = ? , finished = ? where tno = ?";
+
+        @Cleanup Connection connection = ConnectionUtil.INSTANCE.getConnection();
+        @Cleanup PreparedStatement preparedStatement = connection.prepareStatement(sql);
+
+        preparedStatement.setString(1,todoVO.getTitle() );
+        preparedStatement.setDate(2, Date.valueOf( todoVO.getDueDate() ) );
+        preparedStatement.setBoolean(3,todoVO.isFinished() );
+        preparedStatement.setLong(4,todoVO.getTno() );
+
+        preparedStatement.executeUpdate();
     }
 }
