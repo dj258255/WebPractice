@@ -2,13 +2,17 @@ package org.zerock.jdbcex.service;
 
 //TodoService와 ModelMapper 테스트
 //DTO VO 둘다 이용해야 하는 둘다 변환
-
+import lombok.extern.log4j.Log4j2;
 import org.modelmapper.ModelMapper;
 import org.zerock.jdbcex.dao.TodoDAO;
 import org.zerock.jdbcex.domain.TodoVO;
 import org.zerock.jdbcex.dto.TodoDTO;
 import org.zerock.jdbcex.util.MapperUtil;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Log4j2
 public enum TodoService {
     INSTANCE;
 
@@ -25,8 +29,23 @@ public enum TodoService {
 
         TodoVO todoVO = modelMapper.map(todoDTO, TodoVO.class);
 
-        System.out.println("todoVO: " + todoVO);
+        //System.out.println("todoVO: " + todoVO);
+        log.info(todoVO);
 
         dao.insert(todoVO); // int 반환하니 이를 이용해서 예외처리도 가능
+    }
+
+    public List<TodoDTO> listAll()throws Exception{
+
+        List<TodoVO> voList = dao.selectAll();
+
+        log.info("voList..........................");
+        log.info(voList);
+
+        List<TodoDTO> dtoList = voList.stream()
+                .map(vo -> modelMapper.map(vo,TodoDTO.class))
+                .collect(Collectors.toList());
+
+        return dtoList;
     }
 }

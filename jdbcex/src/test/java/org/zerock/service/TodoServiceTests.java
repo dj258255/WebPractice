@@ -1,5 +1,6 @@
 package org.zerock.service;
 
+import lombok.extern.log4j.Log4j2;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.zerock.jdbcex.dto.TodoDTO;
@@ -7,6 +8,7 @@ import org.zerock.jdbcex.service.TodoService;
 
 import java.time.LocalDate;
 
+@Log4j2
 public class TodoServiceTests {
     private TodoService todoService;
 
@@ -23,6 +25,8 @@ public class TodoServiceTests {
                 .dueDate(LocalDate.now())
                 .build();
 
+        log.info("------------------------------"); //테스트코드의 log4j2 설정 확인
+        log.info(todoDTO);
 
         todoService.register(todoDTO);
     }
