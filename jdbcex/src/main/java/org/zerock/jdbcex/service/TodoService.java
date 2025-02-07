@@ -33,6 +33,8 @@ public enum TodoService {
         log.info(todoVO);
 
         dao.insert(todoVO); // int 반환하니 이를 이용해서 예외처리도 가능
+
+
     }
 
     public List<TodoDTO> listAll()throws Exception{
@@ -48,4 +50,5 @@ public enum TodoService {
 
         return dtoList;
     }
+
 }
