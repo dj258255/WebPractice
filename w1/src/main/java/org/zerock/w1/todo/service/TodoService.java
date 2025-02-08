@@ -12,7 +12,6 @@ public enum TodoService {
     INSTANCE;
 
     public void register(TodoDTO todoDTO){
-
         System.out.println("DEBUG......" + todoDTO);
     }
 
