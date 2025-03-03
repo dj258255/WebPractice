@@ -1,4 +1,8 @@
 package org.zerock.springex.sample;
 
-public class SampleDAO {
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SampleDAO {
 }
