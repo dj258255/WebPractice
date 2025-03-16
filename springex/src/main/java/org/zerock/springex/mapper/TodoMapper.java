@@ -11,4 +11,6 @@ public interface TodoMapper {
     void insert(TodoVO todoVO);
 
     List<TodoVO> selectAll();
+
+    TodoVO selectOne(Long tno); //TodoMapper 조회 기능 개발
 }

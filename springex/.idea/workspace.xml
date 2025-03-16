@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a71eef-c530-4583-aa13-a45ba2a276c2" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +363,7 @@
       <workItem from="1740927613050" duration="16717000" />
       <workItem from="1741262561853" duration="8960000" />
       <workItem from="1741353461661" duration="12262000" />
-      <workItem from="1741609745816" duration="5286000" />
+      <workItem from="1741609745816" duration="9592000" />
     </task>
     <servers />
   </component>
