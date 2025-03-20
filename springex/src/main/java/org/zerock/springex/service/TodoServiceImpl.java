@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class TodoServiceImpl implements TodoService{
 
+
     private final TodoMapper todoMapper; //의존성 주입을 이용해서 데이터베이스 처리
 
     private final ModelMapper modelMapper; //DTO VO 변환을 처리
@@ -39,6 +40,20 @@ public class TodoServiceImpl implements TodoService{
                 .collect(Collectors.toList());
 
         return dtoList;
+    }
+
+    @Override
+    public TodoDTO getOne(Long tno){
+        TodoVO todoVO = todoMapper.selectOne(tno);
+
+        TodoDTO todoDTO = modelMapper.map(todoVO,TodoDTO.class);
+
+        return todoDTO;
+    }
+
+    @Override
+    public void remove(Long tno){
+        todoMapper.delete(tno);
     }
 
 }

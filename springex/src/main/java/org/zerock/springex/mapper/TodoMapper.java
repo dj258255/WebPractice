@@ -12,5 +12,7 @@ public interface TodoMapper {
 
     List<TodoVO> selectAll();
 
-    TodoVO selectOne(Long tno); //TodoMapper 조회 기능 개발
+    TodoVO selectOne(Long tno);
+
+    void delete(Long tno);
 }

@@ -22,6 +22,28 @@ public class TodoController {
 
     private final TodoService todoService;
 
+    @GetMapping({"/read", "/modify"})
+    public void read(Long tno, Model model){
+
+        TodoDTO todoDTO = todoService.getOne(tno);
+        log.info(todoDTO);
+
+        model.addAttribute("dto", todoDTO );
+
+    }
+
+//    @GetMapping({"/read", "/modify"})
+//    public void read(Long tno, PageRequestDTO pageRequestDTO, Model model){
+//
+//        TodoDTO todoDTO = todoService.getOne(tno);
+//        log.info(todoDTO);
+//
+//        model.addAttribute("dto", todoDTO );
+//
+//    }
+
+
+
     @RequestMapping("/list")
     public void list(Model model){
 
@@ -54,6 +76,17 @@ public class TodoController {
         log.info(todoDTO);
 
         todoService.register(todoDTO);
+
+        return "redirect:/todo/list";
+    }
+
+    @PostMapping("/remove")
+    public String remove(Long tno, RedirectAttributes redirectAttributes){
+        log.info("-------------remove----------");
+        log.info("tno : " + tno);
+
+
+        todoService.remove(tno);
 
         return "redirect:/todo/list";
     }

@@ -21,5 +21,11 @@
     <select id="selectOne" resultType="org.zerock.springex.domain.TodoVO">
         select * from tbl_todo where tno = #{tno}
     </select>
-    
+
+
+    <delete id="delete">
+        delete from tbl_todo where tno = #{tno}
+    </delete>
+
+
 </mapper>

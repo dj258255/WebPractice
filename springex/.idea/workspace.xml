@@ -6,7 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="d5a71eef-c530-4583-aa13-a45ba2a276c2" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/TodoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/dto/TodoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/mapper/TodoMapperTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/zerock/springex/service/TodoServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/zerock/springex/service/TodoServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +92,7 @@
     "Gradle.TodoMapperTests.testGetTime.executor": "Run",
     "Gradle.TodoMapperTests.testInsert.executor": "Run",
     "Gradle.TodoMapperTests.testSelectAll.executor": "Run",
+    "Gradle.TodoMapperTests.testSelectOne.executor": "Run",
     "Gradle.TodoServiceTests.testRegister.executor": "Run",
     "Gradle.springex 빌드.executor": "Run",
     "JavaScript 디버그.test.html.executor": "Run",
@@ -92,6 +101,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat 서버.Tomcat 9.0.96.executor": "Run",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/beomsu/web/WebPractice/springex/src/main/webapp/WEB-INF/views/todo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,35 +120,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.96">
-    <configuration name="TimeMapperTests.testGetTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.zerock.springex.mapper.TimeMapperTests.testGetTime&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TodoMapperTests.testGetTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -201,6 +190,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.zerock.springex.mapper.TodoMapperTests.testSelectAll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TodoMapperTests.testSelectOne" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.zerock.springex.mapper.TodoMapperTests.testSelectOne&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -326,19 +339,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.TodoMapperTests.testSelectAll" />
+      <item itemvalue="Gradle.TodoMapperTests.testSelectOne" />
       <item itemvalue="Gradle.TodoMapperTests.testGetTime" />
       <item itemvalue="Gradle.TodoMapperTests.testInsert" />
       <item itemvalue="Gradle.TodoServiceTests.testRegister" />
-      <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
       <item itemvalue="Tomcat 서버.Tomcat 9.0.96" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TodoMapperTests.testSelectOne" />
         <item itemvalue="Gradle.TodoMapperTests.testSelectAll" />
         <item itemvalue="Gradle.TodoServiceTests.testRegister" />
         <item itemvalue="Gradle.TodoMapperTests.testInsert" />
         <item itemvalue="Gradle.TodoMapperTests.testGetTime" />
-        <item itemvalue="Gradle.TimeMapperTests.testGetTime" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +377,8 @@
       <workItem from="1740927613050" duration="16717000" />
       <workItem from="1741262561853" duration="8960000" />
       <workItem from="1741353461661" duration="12262000" />
-      <workItem from="1741609745816" duration="12726000" />
+      <workItem from="1741609745816" duration="13560000" />
+      <workItem from="1742477428066" duration="4767000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.zerock.springex.domain.TodoVO;
 import org.zerock.springex.dto.TodoDTO;
 
 import java.time.LocalDate;
@@ -31,4 +32,6 @@ public class TodoServiceTests {
 
         todoService.register(todoDTO);
     }
+
+
 }
