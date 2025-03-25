@@ -8,8 +8,10 @@ import org.zerock.springex.domain.TodoVO;
 import org.zerock.springex.dto.TodoDTO;
 import org.zerock.springex.mapper.TodoMapper;
 
+
 import java.util.List;
 import java.util.stream.Collectors;
+
 
 @Service
 @Log4j2
@@ -54,6 +56,13 @@ public class TodoServiceImpl implements TodoService{
     @Override
     public void remove(Long tno){
         todoMapper.delete(tno);
+    }
+
+    @Override
+    public void modify(TodoDTO todoDTO){
+        TodoVO todoVO = modelMapper.map(todoDTO, TodoVO.class);
+
+        todoMapper.update(todoVO);
     }
 
 }

@@ -7,6 +7,11 @@
     <list default="true" id="d5a71eef-c530-4583-aa13-a45ba2a276c2" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/controller/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/service/TodoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/TodoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/servlet-context.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo/modify.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +50,8 @@
         <option value="spring-beans.schema" />
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,43 +80,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Gradle.SampleTests.testConnection.executor": "Run",
-    "Gradle.SampleTests.testService1.executor": "Run",
-    "Gradle.TimeMapperTests.executor": "Run",
-    "Gradle.TimeMapperTests.testGetTime.executor": "Run",
-    "Gradle.TodoMapperTests.testGetTime.executor": "Run",
-    "Gradle.TodoMapperTests.testInsert.executor": "Run",
-    "Gradle.TodoMapperTests.testSelectAll.executor": "Run",
-    "Gradle.TodoMapperTests.testSelectOne.executor": "Run",
-    "Gradle.TodoServiceTests.testRegister.executor": "Run",
-    "Gradle.springex 빌드.executor": "Run",
-    "JavaScript 디버그.test.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat 서버.Tomcat 9.0.96.executor": "Run",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/beomsu/web/WebPractice/springex/src/main/webapp/WEB-INF/views/todo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.1900749",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.SampleTests.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SampleTests.testService1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeMapperTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TimeMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testGetTime.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testInsert.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testSelectAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoMapperTests.testSelectOne.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TodoServiceTests.testRegister.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.springex 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript 디버그.test.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat 서버.Tomcat 9.0.96.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/beomsu/web/WebPractice/springex/src/main/webapp/WEB-INF/views/todo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1900749&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/todo" />
@@ -372,6 +377,7 @@
       <workItem from="1741353461661" duration="12262000" />
       <workItem from="1741609745816" duration="13560000" />
       <workItem from="1742477428066" duration="6534000" />
+      <workItem from="1742905972764" duration="1063000" />
     </task>
     <servers />
   </component>
