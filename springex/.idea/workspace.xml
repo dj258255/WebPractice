@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a71eef-c530-4583-aa13-a45ba2a276c2" name="변경" comment="" />
+    <list default="true" id="d5a71eef-c530-4583-aa13-a45ba2a276c2" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/zerock/springex/mapper/TodoMapper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -369,6 +371,7 @@
       <workItem from="1741609745816" duration="13560000" />
       <workItem from="1742477428066" duration="6534000" />
       <workItem from="1742905972764" duration="1478000" />
+      <workItem from="1743514302239" duration="1507000" />
     </task>
     <servers />
   </component>
