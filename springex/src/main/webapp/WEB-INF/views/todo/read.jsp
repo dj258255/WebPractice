@@ -1,12 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: beomsu
-  Date: 25. 3. 20.
-  Time: 오후 10:43
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -93,29 +87,29 @@
                         </div>
 
                         <script>
-                            document.querySelector(".btn-primary").addEventListener("click", function(e){
+                            /*document.querySelector(".btn-primary").addEventListener("click", function(e){
                                 self.location = "/todo/modify?tno="+${dto.tno}
+                            },false)*/
+
+
+                            document.querySelector(".btn-primary").addEventListener("click", function(e){
+
+                                self.location = `/todo/modify?tno=${dto.tno}&${pageRequestDTO.link}`
+
                             },false)
 
 
-                            <%--document.querySelector(".btn-primary").addEventListener("click", function(e){--%>
 
-                            <%--    self.location = `/todo/modify?tno=${dto.tno}&${pageRequestDTO.link}`--%>
+                            // document.querySelector(".btn-secondary").addEventListener("click", function(e){
+                            //     self.location = "/todo/list";
+                            // },false)
 
-                            <%--},false)--%>
-
-
-
+                            //목록 페이지로 이동하는 이벤트 처리
                             document.querySelector(".btn-secondary").addEventListener("click", function(e){
-                                self.location = "/todo/list";
+
+                                self.location = "/todo/list?${pageRequestDTO.link}"
+
                             },false)
-
-                            <%--//목록 페이지로 이동하는 이벤트 처리--%>
-                            <%--document.querySelector(".btn-secondary").addEventListener("click", function(e){--%>
-
-                            <%--    self.location = "/todo/list?${pageRequestDTO.link}"--%>
-
-                            <%--},false)--%>
 
                         </script>
 
