@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <ul>
+    <li th:each="str,status : ${list}">
+      [[${status.index}]] -- [[${str}]]
+    </li>
+  </ul>
+
+  <ul>
+    <li th:each="str,status: ${list}">
+      <span th:if="${status.odd}"> ODD -- [[${str}]]</span>
+      <span th:unless="${status.odd}"> EVEN -- [[${str}]] </span>
+    </li>
+  </ul>
+
+</body>
+</html>
