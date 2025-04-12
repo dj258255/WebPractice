@@ -3,7 +3,6 @@ buildscript {
         queryDslVersion = "5.1.0"
     }
 }
-
 plugins {
     id 'java'
     id 'org.springframework.boot' version '3.4.4'
@@ -45,23 +44,22 @@ dependencies {
 
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.4.0'
 
-    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
+    implementation 'org.modelmapper:modelmapper:3.2.2'
+
+    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"
 
     annotationProcessor(
-
             "jakarta.persistence:jakarta.persistence-api",
-
             "jakarta.annotation:jakarta.annotation-api",
-
             "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"
 
     )
 }
 
 sourceSets {
-    main{
-        java{
-            srcDirs = ["$projectDir/src/main/java" , "$projectDir/build/generated"]
+    main {
+        java {
+            srcDirs = ["$projectDir/src/main/java", "$projectDir/main/generated"]
         }
     }
 }
